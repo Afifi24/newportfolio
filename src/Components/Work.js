@@ -27,7 +27,7 @@ export default function Work() {
     <ScrollTop/>
     <div className="line"></div>
      <Footer>
-      <p className='footer'>&copy; 2022 afifi ibrahim Designed, <br /> Developed and Deployed by Me</p>
+      <p className='footer'>&copy; 2022 afifi ibrahim Designed, <br /> Developed and Deployed by Me <i class="fa-solid fa-heart"></i></p>
     </Footer>
     </Workstyle>
   )
@@ -71,5 +71,8 @@ justify-content: center;
 
 p{
   text-align: center;
+  .fa-heart{
+    color: red;
+  }
 }
 `

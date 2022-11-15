@@ -50,6 +50,12 @@ gap: 2rem;
         display: flex;
         align-items: center;
         margin-bottom:2rem;
+        a{
+          &:hover{
+            color: #00fff0;
+          }
+
+        }
         .fa-solid{
         margin-left:1rem;
     }

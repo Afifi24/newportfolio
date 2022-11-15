@@ -13,11 +13,11 @@ export default function Contact() {
         Below you will find links to my <span>GitHub</span>,<span> Instagram</span>,<span> LinkeIdn</span>
         </p>
         <div className="icons">
-            <a href="https://github.com/Afifi24" target='blank'>
+            <a  href="https://github.com/Afifi24" target='blank'>
             <i className="fa fa-github hello" ></i>
             </a>
-            <a href="https://www.instagram.com/afifi-brahim" target='blank'>
-            <i className="fab fa-instagram" aria-hidden="true"></i>
+            <a  href="https://www.instagram.com/afifi-brahim" target='blank'>
+            <i id='color' className="fab fa-instagram" aria-hidden="true"></i>
             </a>
             <a href="https://www.linkedin.com/in/brahim-afifi" target='blank'>
             <i className="fab fa-linkedin" aria-hidden="true"></i>
@@ -41,7 +41,7 @@ export default function Contact() {
       <ScrollTop/>
       <div className="line"></div>
       <Footer>
-      <p className='footer'>&copy; 2022 afifi ibrahim Designed, <br /> Developed and Deployed by Me</p>
+      <p className='footer'>&copy; 2022 afifi ibrahim Designed, <br /> Developed and Deployed by Me <i class="fa-solid fa-heart"></i></p>
     </Footer>
     </Contactstyle>
   )
@@ -67,11 +67,19 @@ const Contactstyle = styled.div`
   p{
     margin: 2rem;
     line-height: 30px;
+    
+    span{
+      background: linear-gradient(to left,#acb6e5,#86fde8);
+      -webkit-text-fill-color:transparent;
+       background-clip:text;
+       font-size: 20px;
+    }
   }
   .icons{
     a{
       margin: 1rem;
       font-size: 2rem;
+      color: rgb(85,26,139);
       &:hover{
         color: #00fff0;
 
@@ -104,8 +112,9 @@ const Contactstyle = styled.div`
     font-size: 15px;
     outline: none;
     &:focus{
-      border: 2px solid black;
+      border: 2px solid #444;
       box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+      border-radius: 5px;
     }
   }
   textarea{
@@ -113,9 +122,10 @@ const Contactstyle = styled.div`
     padding: 0.5rem;
     width: 20rem;
     &:focus{
-      border: 2px solid #000;
+      border: 2px solid #444;
       box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
-
+      border-radius: 5px;
+      
     }
   }
  
@@ -148,5 +158,9 @@ justify-content: center;
 
 p{
   text-align: center;
+  .fa-heart{
+    color: red;
+   
+  }
 }
 `

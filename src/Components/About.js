@@ -15,7 +15,7 @@ export default function About() {
           <h1> <span><i class="fa-solid fa-address-card"></i></span> A little about Me</h1>
           <div className="about-content">
             <div className="about-content-text">
-             <h2>Hello</h2>
+             <h2><span>Hello!</span> </h2>
              <p>My name is brahim afifi and i'm a passionate Frontend Web Developer using web technologies to build amazing products and focusing on solving problems for different niches and different industries using the power of technologies.
                 <br /><br />
                 My goal is to continously grow as a developer while staying current with the latest trend and technologies.
@@ -24,7 +24,7 @@ export default function About() {
              </p>
             </div>
             <div className="about-content-skills">
-           <h2>Skills</h2>
+           <h2><span>Skills</span> </h2>
             <div className="languages">
             <h4>HTML</h4>
              <h4>CSS</h4>
@@ -40,7 +40,7 @@ export default function About() {
      <ScrollTop/>
      <div className="line"></div>
      <Footer>
-      <p className='footer'>&copy; 2022 afifi ibrahim Designed, <br /> Developed and Deployed by Me</p>
+      <p className='footer'>&copy; 2022 afifi ibrahim Designed, <br /> Developed and Deployed by Me <i class="fa-solid fa-heart"></i></p>
     </Footer>
     </Aboutstyle>
   )
@@ -119,12 +119,14 @@ h1{
 .about-content-text{
     flex: 1;
     h2{
-    margin-bottom: 2rem;
-    background: linear-gradient(to left,#acb6e5,#86fde8);
+        margin-bottom: 2rem;
+        text-align: center;
+    span{
+     background: linear-gradient(to left,#acb6e5,#86fde8);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
      text-align: center;
-
+    }
 } 
 p{
     line-height: 27px;
@@ -137,11 +139,16 @@ p{
  justify-content: space-between;
  h2{
     margin-bottom: 2rem;
+    text-align: center;
+    span{
+      
     background: linear-gradient(to left,#acb6e5,#86fde8);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     text-align: center;
     display: inline;
+    }
+   
    
 }
     flex: 1;
@@ -192,5 +199,8 @@ justify-content: center;
 
 p{
   text-align: center;
+  .fa-heart{
+    color: red;
+  }
 }
 `

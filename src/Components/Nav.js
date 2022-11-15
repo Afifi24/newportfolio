@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
+import {motion} from 'framer-motion'
+import { useLocation } from 'react-router-dom'
 export default function Nav() {
     const [isopen,setIsopen] = useState(false)
     const CloseOpen =()=>{
@@ -9,6 +11,7 @@ export default function Nav() {
     const Close = ()=>{
         setIsopen(false)
     }
+    const {pathname} = useLocation()
   return (
    <Header>
      <Navstyle>
@@ -17,9 +20,17 @@ export default function Nav() {
         <i className={isopen?'fas fa-times':'fas fa-bars'}/>
      </div>
       <ul className={isopen ? 'nav-menu active': 'nav-menu'}>
-        <li onClick={Close} className='nav-item'><Link to='/' className='nav-link'>About</Link></li>
-        <li onClick={Close} className='nav-item'><Link to='/work' className='nav-link'>Work</Link></li>
-        <li onClick={Close} className='nav-item'><Link to='/contact' className='nav-link'>Contact</Link></li>
+        <li onClick={Close} className='nav-item'><Link to='/' className='nav-link'>About</Link>
+        <Line initial={{width:'0'}} animate={{width:pathname === '/'? '100%':'0'}} />
+        </li>
+        <li onClick={Close} className='nav-item'><Link to='/work' className='nav-link'>Work</Link>
+        <Line initial={{width:'0'}} animate={{width:pathname === '/work'? '100%':'0'}} />
+        
+        </li>
+        <li onClick={Close} className='nav-item'><Link to='/contact' className='nav-link'>Contact</Link>
+        <Line initial={{width:'0'}} animate={{width:pathname === '/contact'? '100%':'0'}} />
+        
+        </li>
       </ul>
     </Navstyle>
    </Header>
@@ -68,6 +79,7 @@ const Navstyle = styled.div`
    }
    .nav-item{
     margin-left: 5rem;
+    position: relative;
    }
    .nav-link{
     text-decoration: none;
@@ -114,4 +126,14 @@ const Navstyle = styled.div`
         
 
     }
+`
+const Line = styled(motion.div)`
+height: 0.27rem;
+position: absolute;
+left: 0%;
+width: 0%;
+
+background-color: #00fff0;
+bottom: -70%;
+transition: 0.5s;
 `
