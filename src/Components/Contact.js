@@ -1,8 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import {motion} from 'framer-motion'
+import {PageAnimation} from '../Animation'
+import ScrollTop from './ScrollTop'
 export default function Contact() {
   return (
-    <Contactstyle>
+    <Contactstyle >
        <div className="contact-head">
        <h1> "Let's Connect!" </h1>
         <p>Feel free to connect with me on social media!
@@ -32,10 +35,10 @@ export default function Contact() {
          <input type="text" placeholder='Name' />
          <input type="email" placeholder='Email' />
          <textarea name="message" id="" cols="33" rows="15"></textarea>
-         <input type="button" value="Send" className='btn' />
+         <input type="submit" value="Send" className='btn' />
       </form>
       </div>
-      
+      <ScrollTop/>
       <div className="line"></div>
       <Footer>
       <p className='footer'>&copy; 2022 afifi ibrahim Designed, <br /> Developed and Deployed by Me</p>
@@ -108,13 +111,16 @@ const Contactstyle = styled.div`
   textarea{
     outline: none;
     padding: 0.5rem;
+    width: 20rem;
     &:focus{
       border: 2px solid #000;
+      box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+
     }
   }
  
   .btn{
-          border: 2px solid #06beb6;
+         
           border-radius: 30px;
           background-color: #06beb6;
           cursor: pointer;
@@ -124,6 +130,9 @@ const Contactstyle = styled.div`
           background-color: transparent;
           color: #000;
           transition: all 0.5s ease;
+          }
+          &:focus{
+            border: 1px solid #06beb6;
           }
    }
  }

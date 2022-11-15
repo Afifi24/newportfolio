@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import WorkSubItem from './WorkSubItem'
+import {motion} from 'framer-motion'
 export default function WorkItem({item}) {
   return (
     <Workitemstyle>
@@ -31,7 +32,7 @@ export default function WorkItem({item}) {
 }
 
 // styled components
-const Workitemstyle = styled.div`
+const Workitemstyle = styled(motion.div)`
 min-height: 100vh;
 display: flex;
 align-items: center;

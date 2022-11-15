@@ -1,13 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
+import {motion} from 'framer-motion'
+import ScrollTop from './ScrollTop'
 export default function About() {
   return (
-    <Aboutstyle>
+    <Aboutstyle >
       <div className="header">
      <h1>ai</h1>
         <h2>afifi ibrahim </h2>
         <h4>Front-End Developer</h4>
-        <p>I am a Developer with a working proficiency in HTML, CSS, Javascript and React </p>
+        <p>I am a Developer with a working proficiency in HTML, CSS, JavaScript and intermidiate in React </p>
      </div>
      <SectionAbout>
           <h1> <span><i class="fa-solid fa-address-card"></i></span> A little about Me</h1>
@@ -35,6 +37,7 @@ export default function About() {
             </div>
           </div>
      </SectionAbout>
+     <ScrollTop/>
      <div className="line"></div>
      <Footer>
       <p className='footer'>&copy; 2022 afifi ibrahim Designed, <br /> Developed and Deployed by Me</p>
@@ -120,9 +123,9 @@ h1{
     background: linear-gradient(to left,#acb6e5,#86fde8);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
-    text-align: center;
-    display: block;
-}
+     text-align: center;
+
+} 
 p{
     line-height: 27px;
 }
@@ -138,7 +141,8 @@ p{
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     text-align: center;
-    display: block;
+    display: inline;
+   
 }
     flex: 1;
     .languages{

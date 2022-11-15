@@ -29,10 +29,11 @@ export default function Nav() {
 
 const Header = styled.div`
   min-height: 12vh;
-  background-color: #222;
+  background-color: #000;
   display: flex;
   align-items: center;
   position: fixed;
+  box-shadow: 2px 5px 10px rgba(0,0,0,0.1) ;
    top: 0;
    left: 0;
    right: 0;
@@ -98,7 +99,7 @@ const Navstyle = styled.div`
             height: 100vh;
             top: 0%;
             left: -100%;
-            background-color: lightcoral;
+            background-color: #222;
             transition: all 0.5s ease;
             flex-direction: column;
             align-items: center;
