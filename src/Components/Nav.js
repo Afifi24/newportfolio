@@ -68,6 +68,7 @@ const Navstyle = styled.div`
     padding: 0.3rem;
     border-radius: 20px;
     padding-bottom: 0.4rem;
+    font-size: 20px;
    }
    .icon-menu{
     display: none;
@@ -132,8 +133,7 @@ height: 0.27rem;
 position: absolute;
 left: 0%;
 width: 0%;
-
-background-color: #00fff0;
+background-color: #06beb6;
 bottom: -70%;
 transition: 0.5s;
 `

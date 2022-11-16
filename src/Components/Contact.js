@@ -73,6 +73,10 @@ const Contactstyle = styled.div`
       -webkit-text-fill-color:transparent;
        background-clip:text;
        font-size: 20px;
+
+       background-clip: text;
+     -webkit-background-clip: text;
+      color: transparent;
     }
   }
   .icons{
@@ -140,9 +144,12 @@ const Contactstyle = styled.div`
           background-color: transparent;
           color: #000;
           transition: all 0.5s ease;
+          font-weight: bold;
           }
           &:focus{
             border: 1px solid #06beb6;
+          border-radius: 30px;
+
           }
    }
  }
