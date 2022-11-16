@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
 import ScrollTop from './ScrollTop'
+import Codecontainer from './CodeContainer'
 export default function About() {
   return (
     <Aboutstyle >
@@ -38,6 +39,10 @@ export default function About() {
           </div>
      </SectionAbout>
      <ScrollTop/>
+     <Codestyle>
+     <h1><i class="fa-solid fa-arrow-down"></i></h1>
+     <Codecontainer/>
+     </Codestyle>
      <div className="line"></div>
      <Footer>
       <p className='footer'>&copy; 2022 afifi ibrahim Designed, <br /> Developed and Deployed by Me <i class="fa-solid fa-heart"></i></p>
@@ -77,7 +82,9 @@ margin: auto;
    h2{
     margin-top: 1rem;
    }
-   
+   p{
+    line-height: 30px;
+   }
 }
 
 /* media query */
@@ -163,6 +170,10 @@ p{
             width: 6rem;
             text-align: center;
             padding: 0.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: normal;
+            border-radius: 5px;
+            background-color: #eee;
         }
     }
 }
@@ -188,6 +199,23 @@ p{
    }
 }
 `
+
+// code container
+
+const Codestyle= styled.div`
+min-height: 100vh;
+h1{
+    text-align: center;
+    .fa-arrow-down{
+        text-align: center;
+        font-size: 3rem;
+        height: 40px;
+    }
+}
+
+`
+
+
 // footer
 
 const Footer = styled.div`

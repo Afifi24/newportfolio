@@ -48,7 +48,7 @@ const Header = styled.div`
    top: 0;
    left: 0;
    right: 0;
-
+z-index: 100;
 `
 const Navstyle = styled.div`
    display: flex;
