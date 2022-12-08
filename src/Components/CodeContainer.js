@@ -20,7 +20,7 @@ export default function Codecontainer() {
              <li>&nbsp; {'}'} </li>
              <li>&nbsp;afifi.skills = {'{'} </li>
              <li>&nbsp;&nbsp;&nbsp;&nbsp; languages: [“HTML” , “CSS” , “JavaScript” , “React”,    “SASS”, “Python”, “C++” ],</li>
-             <li>&nbsp;&nbsp;&nbsp;&nbsp; software: [ “Photoshop”, “Premier Pro”, “Figma”]</li>
+             <li>&nbsp;&nbsp;&nbsp;&nbsp; software: [ “Mathlab”, “Premier Pro”, “Git”]</li>
              <li>&nbsp;{'}'}</li>
              <li>&nbsp; afifi.interests = [“Workout”, “sci-fi movies”, “coding”, “football”]</li>
              <li>&nbsp; afifi.funFacts = {'{'}</li>
@@ -45,13 +45,12 @@ export default function Codecontainer() {
 // styled components
 
 const Codecontainerstyle = styled.div`
-  /* font-family: 'Lato', sans-serif; */
+  
 
 .code-container{
   position: relative;
   width: 90%;
   max-width: 950px;
-  /* margin: 0 1em 0 1em; */
   margin: auto;
   max-height: 450px;
   background-color: #fbfbfb;
@@ -62,7 +61,7 @@ const Codecontainerstyle = styled.div`
 }
 
 .code-toolbar{
-  position: sticky;
+position: sticky;
 width: 100%;
 z-index: 10;
 top: 0;
@@ -75,7 +74,7 @@ border-radius: 10px 10px 0 0;
   height: 12px;
   width: 12px;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 }
 .circle:nth-child(1){
@@ -89,7 +88,7 @@ border-radius: 10px 10px 0 0;
 }
 .code{
 line-height: 200%;
-font-size: 1em;
+/* font-size: 1em; */
 margin-left: 1em;
 color: #000;
 .line-numbers{

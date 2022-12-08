@@ -15,10 +15,10 @@ export default function Work() {
   // }else{
   //   controls.start('hidden')
   // }
-  // variants={Fade} ref={element} initial='hidden' animate='show'
+  // variants={Fade} ref={element} initial='hidden' animate={controls}
   return (
-    <Workstyle >
-      <h1 className='work'>My Work</h1>
+    <Workstyle  >
+      <h1 className='work'>  My Work </h1>
     <div className="work-content">
     {WorkData.map((item)=>(
     <WorkItem key={item.id} item={item}/>
