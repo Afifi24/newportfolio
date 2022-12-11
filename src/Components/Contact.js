@@ -31,10 +31,10 @@ export default function Contact() {
        <div className="chat">
       <h1> Want To Chat? </h1>
       <p>Fill out this form to collaborate, ask a question about my word , or just say hi! </p>
-      <form className='form'>
-         <input type="text" placeholder='Name' />
-         <input type="email" placeholder='Email' />
-         <textarea name="message" id="" cols="33" rows="15"></textarea>
+      <form action='https://formspree.io/f/xzbwnywv' className='form'  method="POST">
+         <input name='Name' type="text" placeholder='Name' required />
+         <input name='Email' type="email" placeholder='Email' required />
+         <textarea name="Message" id="" cols="33" rows="15" required></textarea>
          <input type="submit" value="Send" className='btn' />
       </form>
       </div>
